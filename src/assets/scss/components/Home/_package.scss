@@ -88,6 +88,8 @@
             border-radius: 30px;
             background: $color-light;
             padding: 15px;
+            transition: $transition_slow;
+
             .item_image{
                 border-radius: 18px;
                 margin-bottom: 15px;
@@ -173,6 +175,77 @@
             }
             .main-btn{
                 padding: 0 20px;
+            }
+
+            &:hover{
+                background: $color-secondary;
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.13);
+                .item_content{
+                    .item_title{
+                        color: $color-light;
+                    }
+                    .item_description,
+                    .flex_wrap p{
+                        color: $color-light;
+                    }
+                    .flex_wrap{
+                        .icon{
+                            svg{
+                                path{
+                                    fill: $color-light;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .main-btn{
+                    background-color: $color-light;
+                    color: $color-secondary;
+                    padding: 0 20px;
+                    &:hover{
+                        background-color: $color-primary;
+                        color: $color-light;
+                    }
+                    .dot{
+                        background-color: $color-light;
+                    }
+                    svg{
+                        path{
+                            fill: $color-light;
+                        }
+                    }
+                    &:hover{
+                        .dot{
+                            background-color: $color-primary;
+                        }
+                        svg{
+                            path{
+                                fill:$color-primary
+                            }
+                        }
+                    }
+                }
+
+                .btns_group{
+                    .curve{
+                        svg{
+                            path{
+                                fill: $color_light
+                            }
+                        }
+                    }
+                }
+                .ruppies,
+                .amount{
+                    color: $color-light;
+                }
+                del{
+                    color: #E1E1E1;
+                }
+                .item_range{
+                    border-top: 1px solid rgba(255, 255, 255, 0.22);
+                }
             }
             
         }

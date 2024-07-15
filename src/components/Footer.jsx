@@ -180,7 +180,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-6">
-                    <div className="footer_image d-none d-lg-block">
+                    <div className="footer_image d-none d-lg-block amin-up-down">
                         <img src={footerGirl} alt="" className="img-fluid" />
                     </div>
                     <div className="social_wrap  d-block d-lg-none">

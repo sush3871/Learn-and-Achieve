@@ -28,8 +28,8 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6">
-                        <div className="about_content mt-lg-5" style={{backgroundImage : 'linear-gradient(to left bottom, rgb(121, 189, 235), rgb(123, 197, 244))'}}>
+                    <div className="col-md-6  mt-lg-5">
+                        <div className="about_content" style={{backgroundImage : 'linear-gradient(to left bottom, rgb(121, 189, 235), rgb(123, 197, 244))'}}>
                             <h2 className="about_title">Empowering the Next Generation.</h2>
                             <p>
                                 We believe in equipping children with the knowledge and skills they need to confidently face 
@@ -45,7 +45,7 @@ function About() {
                 </div>
                 <div className="row">
                     <div className="col-md-6">
-                        <div className="about_content pt-0"  style={{backgroundImage : 'linear-gradient(to left bottom, rgb(83, 158, 148), rgb(125, 225, 217))'}}>
+                        <div className="about_content about_mt_minus pt-0"  style={{backgroundImage : 'linear-gradient(to left bottom, rgb(83, 158, 148), rgb(125, 225, 217))'}}>
                             <div className="bg_image mt-0">
                                 <img src={a3} alt="bg-Img" className='img-fluid'/>
                             </div>
@@ -59,7 +59,7 @@ function About() {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <div className="about_content mt-lg-5" style={{backgroundImage : 'linear-gradient(212deg, #FFD058 -2.12%, #FFE094 45.73%, #FFC636 97.77%)'}}>
+                        <div className="about_content mt-lg-4" style={{backgroundImage : 'linear-gradient(212deg, #FFD058 -2.12%, #FFE094 45.73%, #FFC636 97.77%)'}}>
                             <h2 className="about_title">Join Us on the <br /> Journey</h2>
                             <p>
                                 Learn and Achieve is dedicated to enhancing the educational experience of students 

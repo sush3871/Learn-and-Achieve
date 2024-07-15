@@ -37,8 +37,20 @@
                 font-weight: 600;
                 line-height: 24px; 
                 margin-bottom: 0;
+                transition: $transition_slow;
+            }
+
+            &:hover{
+                .about_img_wrap{
+                    
+                    img{
+                        filter: brightness(0);
+                    }
+                }
             }
         }
+
+        
     }
 }
 /* 1.5 - Template Global Home_about - End

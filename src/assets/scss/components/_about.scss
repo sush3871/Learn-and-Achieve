@@ -5,6 +5,7 @@
         background-image: linear-gradient(to left bottom, rgb(252, 199, 141), rgb(255, 230, 176));;
         padding: 40px;
         border-radius: 40px;
+        transition: $transition_fast;
         @include xs{
             margin-bottom: 20px;
         }
@@ -32,6 +33,15 @@
                 height: 324px;
             }
             margin-top: 40px;
+        }
+        &.about_mt_minus{
+            @include min-lg(){
+                margin-top: -50px;
+            }
+        }
+
+        &:hover{
+            transform: translateY(-1%);
         }
     }
 }

@@ -72,6 +72,7 @@ img {
 	max-width: 100%;
 	user-select: none;
 	vertical-align: middle;
+	transition: $transition_slow;
 }
 .image_wrap {
 	overflow: hidden;
