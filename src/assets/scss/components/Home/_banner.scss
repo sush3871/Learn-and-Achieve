@@ -1,0 +1,173 @@
+/* 1.4 - Template Global Banner - Start
+================================================== */
+.hero_banner_section{
+    background: linear-gradient(49deg, #FFECDB 9.47%, #FFF 34.32%);
+    position: relative;
+    z-index: 0;
+    @include max-md{
+        padding-top: 20px;
+    }
+    .container-xxl{
+        @include min-xxl{
+            max-width: 100% !important;
+        }
+    }
+    
+    .banner_content{
+        @include min-xl {
+            padding-left: 45px;
+        }
+        .hero_banner_heading{
+            .focus_text{
+                color: $color_dark;
+                font-family: $font_family;
+                font-size: $base_font;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px; 
+                letter-spacing: 0.36px;
+                text-transform: uppercase;
+            }
+            .hero_title{
+                color: $color_primary;
+                font-family: $font_family;
+                font-size: 52px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 60px; 
+                letter-spacing: 1.04px;
+                @include max-md{
+                    line-height: 40px; 
+                }
+                .round{
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        top: 9px;
+                        left: -10px;
+                        height: 100%;
+                        min-width: 309px;
+                        border: 1.5px solid $color_secondary;
+                        border-radius: 49% 51% 52% 48% / 50% 49% 51% 50% ;
+                        animation: flash 5s linear infinite;
+                        @media (max-width:767px){
+                            left: -1%;
+                            top:5%;
+                            min-width: 200px;
+                        }
+                    }
+                }
+                .round2{
+                    position: relative;
+                    background-color: $color_primary;
+                    color: $color_light;
+                    padding: 0px 20px;
+                }
+                .round3{
+                    position: relative;
+                    color: $color_secondary;
+                    &::after{
+                        content: '';
+                        height: 2px;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 5px;
+                        left: 0;
+                        background-color: $color_secondary;
+                        animation: round3Animation 2s infinite alternate;
+                    }
+                }
+            }
+            
+            p{
+                color: $color_dark;
+                font-family: $font_family;
+                font-size: $base_font;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; 
+                letter-spacing: 0.36px;
+            }
+            .btn_group{
+                margin-top: 30px;
+                @include max-md{
+                    margin-top: 20px;
+                }
+            }
+        }
+        
+    }
+    .shape_1{
+        inset-inline-start: 56%;
+        z-index: 1;
+        top: 50px;
+        @include max-md{
+            top: 65%;
+            left: 10%;
+        }
+    }
+    .shape_2{
+        z-index: 1;
+        top: 100px;
+        inset-inline-start: 40%;
+        @include max-md{
+            top: 60%;
+            z-index: -1;
+            left: 50%;
+        }
+    }
+    .shape_3{
+        z-index: 1;
+        bottom: 25px;
+        inset-inline-end: 27%;
+    }
+    .shape_4 {
+        inset-inline-end: 30%;
+        z-index: 1;
+        top: 50px;
+        @include max-md{
+            top: 58%;
+            inset-inline-end: 50%;
+        }
+    }
+    .shape_5 {
+        inset-inline-end: 41%;
+        z-index: -1;
+        bottom: 90px;
+        @include max-md{
+            bottom: -10%;
+            inset-inline-end: 41%;
+        }
+    }
+    .swiper{
+        .swiper-pagination{
+            .swiper-pagination-bullet{
+                width: 10px;
+                height: 10px;
+                background: $bg_grey;
+                opacity: 1;
+                &.swiper-pagination-bullet-active{
+                    background: $color_secondary;
+                }
+            }
+        }
+    }
+    .man_image{
+        @include min-xxl{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        img{
+            @include min-xxl{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+/* 1.4 - Template Global Banner - End
+================================================== */

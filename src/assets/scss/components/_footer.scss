@@ -1,0 +1,168 @@
+/* 1.9 - Template Global Footer - Start
+================================================== */
+.footer_widget_area {
+  .social_wrap {
+    margin-top: 35px;
+    .social_icon {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      li {
+        a {
+          z-index: 1;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          color: #0f0e0e;
+          position: relative;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10.715px;
+          background: $color-light;
+          transition: $transition-slow;
+          svg {
+            path {
+              fill: $color-dark;
+              transition: $transition-slow;
+            }
+          }
+          &:hover {
+            background: $color_secondary;
+            svg {
+              path {
+                fill: $color-light;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_widget {
+    .footer_widget_title{
+      margin-bottom: 30px;
+    }
+    .page_list {
+      li {
+        margin-bottom: 2px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          color: $color-light;
+          font-family: $font-family;
+          font-size: $base-font;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 29px;
+          text-transform: capitalize;
+          transition: $transition-fast;
+          &:hover {
+            color: $color-secondary;
+          }
+          &.active{
+            color: $color-secondary;
+          }
+          
+        }
+      }
+    }
+    .page_list_2 {
+      li {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        svg {
+          path {
+            transition: $transition-fast;
+          }
+        }
+        a {
+          color: $color-light;
+          font-family: $font-family;
+          font-size: $base-font;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 29px;
+          text-transform: capitalize;
+          transition: $transition-fast;
+        }
+        &:hover {
+          a,
+          svg path {
+            color: $color-secondary;
+            fill: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+  .footer_image {
+    @include min-xl {
+      position: absolute;
+      top: -50px;
+    }
+  }
+  .footer_bottom {
+    border-top: 1px solid $color-light;
+    position: relative;
+    margin-top: 60px;
+    .footer_copyright {
+      .copyright_widget {
+        color: $color-light;
+        text-align: center;
+        font-family: $font-family;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+        a {
+          @extend .copyright_widget;
+          color: $color-secondary;
+          transition: $transition-slow;
+          &:hover {
+            color: $color-light;
+          }
+        }
+      }
+    }
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition-slow;
+  }
+  .back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .back-to-top-button {
+    background-color: $color_secondary;
+    color: $color-light;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: $transition-slow;
+    &:hover {
+      background-color: $color_primary;
+    }
+  }
+}
+/* 1.9 - Template Global Footer - End
+================================================== */

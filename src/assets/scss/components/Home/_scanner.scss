@@ -1,0 +1,57 @@
+/* 1.8 - Template Global Scanner - Start
+================================================== */
+.content_box {
+    border-radius: 40px;
+    background: $color-secondary;
+    position: relative;
+    z-index: 1;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        top: 0;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-left-color: $color-primary;
+        border-bottom-color: $color-primary;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+        background-color: $color-primary;
+        height: 100%;
+        width: 40%;
+        z-index: -1;
+        @include max-md{
+            border-bottom-right-radius: 40px;
+            width: 100%;
+            
+        }
+    }
+    .wrapper_box{
+        @include max-md{
+            padding: 20px;
+        }
+        .heading{
+            color: $color_light;
+            font-family: $font-family;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+            text-transform: capitalize;
+        }
+    }
+    .scanner_image{
+        border-radius: 8px;
+        background: $color_light;
+        padding: 8px;
+    }
+    .mobile_img{
+        top: -100px;
+        @include max-md{
+            top: -40px;
+            width: 65%;
+        }
+    }
+}
+/* 1.8 - Template Global Scanner - End
+================================================== */

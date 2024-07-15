@@ -1,0 +1,165 @@
+.registration_section{
+
+    .Main_progress_bar{
+
+        .progress_bar {
+            width: calc(100% - (clamp(8px, 1vw, 18px) / 10)* 30);
+    
+            #checkout-progress {
+                width: 100%;
+                margin: 0px auto;
+                font-size: 2.5em;
+                font-weight: 900;
+                position: relative;
+    
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 16px;
+                    top: 50%;
+                    height: 2px;
+                    width: calc(100% - 32px);
+                    background-color: $bg_grey;
+                    transform: translateY(-50%) perspective(1000px);
+                }
+    
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 16px;
+                    top: 50%;
+                    height: 2px;
+                    width: calc(100% - 32px);
+                    background-color: $color_secondary;
+                    transform: scaleX(0) translateY(-50%) perspective(1000px);
+                    transform-origin: left center;
+                    transition: transform 0.5s ease;
+                }
+    
+                .progress-bar{
+                    width: 100%;
+                    display: flex;
+                    height: 70px;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                    padding: 0 15px;
+    
+                    .step {
+                        z-index: 2;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+    
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            z-index: -1;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%) perspective(1000px);
+                            width: 45px;
+                            height: 45px;
+                            background-color: #EEEEEE;
+                            border-radius: 50%;
+                            border: 5px solid #EEEEEE;
+                            transition: 0.3s ease;
+                        }
+    
+                        &.active::after{
+                            border: 5px solid $color_secondary;
+                            background-color: $color_secondary;
+                        }
+                        &.step-2.active{
+                            img{
+                                filter: none !important;
+                            }
+                        }
+                        &.step-3.active{
+                            img{
+                                filter: invert(100) brightness(1.5) !important;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    
+        .stepper-bottom-line {
+            height: 1px;
+            width: 100%;
+            margin-top: 24px;
+            background-color: #C4C4C4;
+        }
+    }
+    
+    .registration_form{
+        padding-top: 30px;
+
+        .item_title{
+            color: $color_primary;
+            font-family: $font_family;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .form-select{
+            border: none;
+            border-bottom: 1px solid rgba(147, 147, 147, 0.7);
+            color: $color-secondary;
+            font-family: $font_family;
+            border-radius: 0;
+            transition: $transition_slow;
+            color: var(--bs-body-color);
+            padding-left: 0;
+
+            &:visited,
+            &:active,
+            &:focus,
+            &:focus-visible,
+            &:focus-within,
+            &:target{
+                border-bottom: 1px solid $color_primary!important;            ;
+            }
+
+            option{
+                background-image: $bg_secondary_light;
+
+                &:hover{
+                    
+                }
+            }
+        }
+
+        .otp-box {
+            width: 60px;
+            height: 40px;
+            text-align: center;
+            margin: 5px;
+            font-size: 20px;
+            border: none;
+            border-bottom: 1px solid #939393;
+        }
+        .otp-input-group {
+            display: flex;
+        }
+        .otp-time{
+
+            span{
+                color: $color-dark;
+                font-weight: 600;
+            }
+        }
+        .resend-otp{
+
+            span{
+                color: $color-secondary;
+                font-weight: 600;
+            }
+        }
+    }
+}

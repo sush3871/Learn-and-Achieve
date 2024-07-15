@@ -1,0 +1,45 @@
+/* 1.5 - Template Global Home_about - Start
+================================================== */
+.home_about{
+    .about_box{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 24px;
+            border-radius: 25px;
+            border: 1px solid transparent;
+            background: linear-gradient(to top, white, white), linear-gradient(to bottom, #F6821F, #F6821F24);
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+            &:last-child{
+                margin-bottom: 45px;
+            }
+            .about_img_wrap{
+                display: flex;
+                width: 67px;
+                height: 67px;
+                padding: 16px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 14px;
+                background: #FFF2E7;
+            }
+            h4{
+                color: $color_dark;
+                font-family: $font_family;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px; 
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+/* 1.5 - Template Global Home_about - End
+================================================== */

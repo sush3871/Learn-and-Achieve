@@ -1,0 +1,49 @@
+/* 1.8 - Template Global CTA - End
+================================================== */
+.home_cta{
+    background: linear-gradient(90deg, #F5F5F5 0%, #FFF 0.01%, #FFE9D7 100%);
+    overflow-x: hidden;
+    .cta_content{
+        text-align: center;
+        .cta_title{
+            color: $color-dark;
+            text-align: center;
+            font-family: $font-family;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 50px; 
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        .cta_desc{
+            color: $color-dark;
+            text-align: center;
+            font-family: $font-family;
+            font-size: $base-font;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            margin-bottom: 25px;
+        }
+    }
+    .deco_item_1{
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        @include max-md{
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            width: 180px;
+            bottom: 0;
+        }
+    }
+    .line_image{
+        @include max-md{
+            width: 35% !important;
+        }
+    }
+}
+/* 1.8 - Template Global CTA - End
+================================================== */

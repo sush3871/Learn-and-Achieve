@@ -1,0 +1,221 @@
+/* 2.3 - Template Global Bharat Sat - Starts
+================================================== */
+.bharatsat_section{
+    img{
+        border-radius: 20px;
+    }
+    .main_img{
+        @include max-md{
+            margin: 20px 0;
+        }
+    }
+    .first_img{
+        @include min-lg{
+            float: inline-end
+        }
+    }
+    .second_img{
+        margin-top: 20px;
+        @include min-lg{
+            float: inline-end
+        }
+    }
+    .fifth_img{
+        @extend .second_img;
+    }
+    .key_item{
+        padding: 30px 30px 60px 30px;
+        height: 100%;
+        border-radius: 30px;
+        .key_title{
+            color: $color-primary;
+            font-family: $font-family;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+            span{
+                color: $color-primary;
+                font-family: $font-family;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+.benefit_section{
+    background-color: $bg-grey;
+    .benefit_list{
+        .list-inline{
+            li{
+                display: flex;
+                align-items: flex-start;
+                gap: 15px;
+                margin-bottom: 20px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                span{
+                    color: $color-dark;
+                    font-family: $font-family;
+                    font-size: $base-font;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+    }
+}
+
+.rewards_section{
+    .rewards_wrapper{
+        .reward_box{
+            border-radius: 30px;
+            padding: 30px 0 0;
+            height: 100%;
+            @include max-md(){
+                padding: 30px;
+            }
+            &.box_1{
+                background: #BFEAFF;
+            }
+            &.box_2{
+                background: #FFE8E8;
+                padding: 30px;
+            }
+            &.box_3{
+                background: #DCFFD3;
+                padding: 30px;
+            }
+            .box_img{
+                width: 300px;
+                @include max-md(){
+                    width: auto;
+                }
+            }
+        }
+    }
+    .rewards_cta{
+        @include min-lg(){
+            margin-top: 5rem;
+        }
+        .reward-price-card{
+            border-radius: 20px;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(90deg, #C97CFF 0%, #EBCFFF 80%);
+
+            @include max-md(){
+                padding: 30px;
+            }
+
+            .cta_bg{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                
+                img{
+                    border-bottom-right-radius: 20px
+                }
+            }
+            .cta_img{
+               img{
+                @include min-lg(){
+                    margin-top: -25%;
+                }
+               }
+            }
+        }
+    }
+}
+.scholership_section{
+    .exam_fee_wrapper{
+        background-color: $color-light;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-radius: 20px;
+        justify-content: space-between;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .exam_date{
+        display: flex;
+        background-color: $color-primary;
+        align-items: center;
+        color: $color-light;
+        padding: 15px;
+        border-radius: 20px;
+        justify-content: space-between;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .scholership_tab{
+        margin-top: 2rem;
+
+        #pills-tab{
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            background: $color-light;
+            padding: 30px 0 20px 30px;
+
+            .nav-item{
+                width: 100%;
+
+                .nav-link{
+                    color: $color-dark;
+                    background-color: $color-light;
+                    border-radius: 15px ;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 1.18;
+                    text-transform: capitalize;
+                    width: 100%;
+                    padding: 18px;
+                    transition: $transition-fast;
+                    position: relative;
+                    margin-bottom: 1.2rem;
+
+
+                    img{
+                        position: absolute;
+                        left: 5%;
+                        top: 0;
+                        opacity: 0;
+                        transition: $transition-fast;
+                    }
+    
+                    &.active{
+                        color: $color-light;
+                        background-color: $color-secondary;
+
+                        img{
+                             opacity: 1;
+                            transition: $transition-fast;
+                        }
+                    }
+
+                   
+                }
+            }
+        }
+        #pills-tabContent{
+            border-top: 1px solid $color-primary;
+            padding: 30px 0;
+            .rank-card {
+                border-radius: $radius-primary;
+            }
+        }
+    }
+}
+/* 2.3 - Template Global Bharat Sat - Ends
+================================================== */

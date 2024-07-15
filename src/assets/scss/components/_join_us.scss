@@ -1,0 +1,147 @@
+/* 2.6 - Template Global Join Us - Starts
+================================================== */
+.joinUs_section{
+    .why_choose_us{
+        .section_wrapper{
+            border-radius: 30px;
+            background: #FFE6CE;
+            padding: 20px 20px 0px 0;
+            .man_img {
+                img{
+                }
+            }
+        }
+    }
+}
+.category_item{
+    margin-top: 2rem;
+    h3{
+        color: $color-primary;
+        font-family: $font-family;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+        position: relative;
+        @include min-xl{
+            width: 35%;
+        }
+        &::before{
+            content: '';
+            border-left: 5px solid #E05A33;
+            padding-left: 10px;
+        }
+    }
+    p{
+        @include min-xl{
+            width: 65%;
+        }
+    }
+}
+.path_join{
+    .content_wrapper{
+        padding: 25px;
+        border-radius: 30px;
+        @include max-md{
+            margin-bottom: 20px;
+        }
+        .title{
+            color: $color-primary;
+            font-family: $font-family;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .content_wrapper2{
+        background: #DCFFD3;
+    }
+    .content_wrapper3{
+        background: #D6F6FF;
+    }
+    .content_wrapper4{
+        background: #F6FFD2;
+    }
+    .join_us_form_main{
+        padding-top: 100px;
+        .join_form{
+            background-image:linear-gradient(222deg, rgba(0, 123, 195, 0.64) 19.21%, rgba(0, 58, 151, 0.89) 101.03%) ;
+            padding: 70px 25px 25px;
+            border-radius: 30px;
+            // clip-path: polygon(80% 25%, 100% 25%, 100% 100%, 0% 100%, 0 0, 80% 0);
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: red;
+            }
+            .overlay_img{
+                position: absolute;
+                right: 0;
+                top: 0;
+                border-radius: 20px;
+                background: #FFE7D3;
+                padding: 25px 34px;
+            }
+            .title{
+                color: $color-light;
+                font-family: $font-family;
+                font-size: 42px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 42px; /* 100% */
+                text-transform: capitalize;
+                margin-bottom: 50px;
+            }
+            .Joiiin_form{
+                label.form-label, .form-check-label{
+                    color: $color-light;
+                }
+                .form-control{
+                    background-color: transparent;
+                    border-bottom: 1px solid $color-light;
+                    color: $color-light;
+                    &::placeholder {
+                        color: $color-light;;
+                        opacity: 1;
+                      }
+                }
+                
+            }
+            
+        }    
+    }
+    .join_cta{
+        margin-top: 60px;
+        border-radius: 30px;
+        background: #A98AFF;
+        .content_wrapeer{
+            padding: 20px 60px 0px 40px;
+            .content{
+                h3{
+                    color:$color-light;
+                    font-family: $font-family;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 45px; 
+                    margin-bottom: 20px;
+                }
+                p{
+                    color:$color-light;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+/* 2.6 - Template Global Join Us - End
+================================================== */

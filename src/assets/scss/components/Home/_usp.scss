@@ -1,0 +1,95 @@
+/* 1.6 - Template Global USP - Start
+================================================== */
+.home_usp{
+    padding-top: 15px;
+    padding-bottom: 80px;
+    .usp_item{
+        border-radius: 10px;
+        border: 1px solid #F1F1F1;
+        background: $color-light;
+        display: flex;
+        .item_wrapper{
+            padding: 20px 0 0px 15px;
+            .usp_icon{
+                margin-bottom: 20px;
+            }
+            .usp_title{
+                color: $color_dark;
+                font-family: $font_family;
+                font-size: $base_font;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+                text-transform: capitalize;
+            }
+            .usp_desc{
+                color: $color_dark;
+                font-family: $font_family;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; 
+                margin-bottom: 0;    
+                padding-right: 10px;
+            }
+        }
+        .bottom_image{
+            opacity: 0;
+            transition: $transition_slow;
+            svg{
+                border-bottom-left-radius: 10px
+            }
+        }
+        .usp_line{
+            border-radius: 10px;
+            border-bottom-left-radius: 0px;
+            .serial_number{
+                padding: 12px;
+                border-radius: 10px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+                p{
+                    color: $color-light;
+                    text-align: center;
+                    font-family: $font_family;
+                    font-size: $base_font;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; 
+                    text-transform: capitalize;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &:hover{
+            .bottom_image{
+                opacity: 1;
+            }
+        }
+    }
+    .mobile-slider {
+        .slick-slide{
+            padding: 0 5px;
+        }
+        .slick-dots{
+            li{
+                button{
+                    &::before{
+                        font-size: 14px;
+                    }
+                }
+            &.slick-active{
+                button{
+                    &::before{
+                        color: $color_secondary;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+
+/* 1.6 - Template Global USP - End
+================================================== */

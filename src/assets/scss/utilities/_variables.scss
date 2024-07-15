@@ -1,0 +1,75 @@
+/* 1.1 - Template Global Variables - Start
+================================================== */
+@use "sass:map";
+:root{
+    --font-family: 'Gilroy', sans-serif;
+    --base-font : 17px;
+    --color-primary: #004080;
+    --color-secondary: #F6821F;
+    --color-light: #FFFFFF;
+    --color-dark : #000000;
+    --bg-grey: #F3F3F3;
+    --bg-light-alt : #fff1e5;
+    --bg-secondary-light : linear-gradient(90deg, #F5F5F5 0%, #FFF 0.01%, #FFE9D7 100%);
+}
+
+// Font
+$font_family : var(--font-family);
+$base_font : var(--base-font);
+
+// Colors
+$color_primary : var(--color-primary);
+$color_secondary : var(--color-secondary);
+$color_light : var(--color-light);
+$color_dark : var(--color-dark);
+$bg_grey: var(--bg-grey);
+$bg_light_alt : var(--bg-light-alt);
+$bg_secondary_light : var(--bg-secondary-light);
+
+// Border Radius 
+$radius_primary: 10px;
+$radius_md : $radius_primary * .5;
+
+$base_padding: 10px;
+$base_margin : 10px;
+
+
+
+// Transitions 
+
+$transition_fast : 0.3s cubic-bezier(0.5, 1, 0.89, 1);
+$transition_slow : 0.6s cubic-bezier(0.5, 1, 0.89, 1);
+
+// Created color classes using Map
+
+$colors: (
+    "primary": $color_primary,
+    "secondary": $color_secondary,
+    "light": $color_light,
+    "dark" : $color_dark
+);
+
+// Colors
+@each $key , $val in $colors{
+    .color-#{$key}{
+        color: $val !important;
+    }
+}
+
+$bg-colors : (
+    "primary":$color_primary,
+    "secondary":$color_secondary,
+    "light": $color_light,
+    "grey" : $bg_grey,
+    "light-alt" : $bg_light_alt,
+    "secondary-light": $bg_secondary_light
+);
+
+@each $key , $val in $bg-colors{
+    .bg-#{$key}{
+        background-color: $val ;
+    }
+}
+
+/* 1.1 - Template Global Variables - End
+================================================== */

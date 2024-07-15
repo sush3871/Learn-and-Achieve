@@ -1,0 +1,63 @@
+/* 2.1 - Template Global Service - Start
+================================================== */
+.service_section{
+    .service_item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        @include min-lg{
+            flex-direction: row;
+            height: 500px;
+        }
+        .service_content{
+            padding: 40px;        
+            border-radius: 30px;
+            @include min-lg{
+                width: 65%;
+            }
+        }
+        
+        .service_img{
+            @include min-lg{
+                position: absolute;
+                z-index: -1;
+                right: 0;
+            }
+        }
+    }
+    .item_title{
+        color: $color_primary;
+        font-family: $font-family;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+    .service_item2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        @include min-lg{
+            flex-direction: row;
+            height: 500px;
+        }
+        .service_content{
+            padding: 40px;        
+            border-radius: 30px;
+            @include min-lg{
+                width: 65%;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    
+}
+/* 2.1 - Template Global Service - End
+================================================== */

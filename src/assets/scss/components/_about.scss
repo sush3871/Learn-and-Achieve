@@ -1,0 +1,39 @@
+/* 2.0 - Template About - Start
+================================================== */
+.about_section{
+    .about_content{
+        background-image: linear-gradient(to left bottom, rgb(252, 199, 141), rgb(255, 230, 176));;
+        padding: 40px;
+        border-radius: 40px;
+        @include xs{
+            margin-bottom: 20px;
+        }
+        .about_title{
+            color: $color_dark;
+            font-family:$font-family;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 48px; 
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #424448;
+            font-family: $font-family;
+            font-size: $base-font;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 144.444% */
+        }
+        .bg_image{
+            @include min-lg{
+                width: 364px;
+                height: 324px;
+            }
+            margin-top: 40px;
+        }
+    }
+}
+/* 2.0 - Template About - End
+==================================================2.0*/

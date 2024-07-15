@@ -1,0 +1,31 @@
+.terms_conditions_content{
+    .content_wrapper{
+        margin-top: 25px;
+
+        &:first-child{
+            margin-top: 0px;
+        }
+
+        .info_title{
+            color: $color-primary;
+            font-family: $font-family;
+            font-size: 1.26rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.44;
+            position: relative;
+            z-index: 1;
+            counter-reset: section;
+
+            &::before{
+                counter-increment: my-sec-counter;
+                content:  counter(my-sec-counter) ". ";
+            }
+            
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    
+}

@@ -1,0 +1,117 @@
+/* 2.4 - Template Contact - Start
+==================================================2.4*/
+.contact_bg{
+    border-radius: 30px;
+    background: url(../images/contact/contact-bg.png) lightgray 0px -75.549px / 100% 112.777% no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 25px 30px 25px 40px;
+    .contact_desc{
+        p{
+            color: $color_light;
+            font-family: $font-family;
+            font-size: $base-font;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; 
+            margin-bottom: 0;
+        }
+    }
+    .contact_form{
+        border-radius: 16px;
+        background: $color_light;
+        box-shadow: 0px 4px 11px 1px rgba(0, 0, 0, 0.13);
+        padding: 25px 27px;
+        .contact_title{
+            color: $color_dark;
+            font-family: $font-family;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 50px; 
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        label.form-label{
+            color: $color_dark;
+            font-family: $font-family;
+            font-size: $base-font;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+        .form-control{
+            padding: 0;
+            border: none;
+            border-bottom: 1px solid rgba(147, 147, 147, 0.70);            ;
+            border-radius: 0;
+            padding-bottom: 7px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+       
+    }
+}
+.contact_social{
+    .d-flex.flex-lg-row{
+        @include min-lg{
+            gap: 6rem !important
+        }
+    }
+    .social_wrapper{
+        border-radius: 6px;
+        background: $color_light;
+        box-shadow: 0px 4px 18px 1px rgba(0, 0, 0, 0.10);
+        padding: 40px 25px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .social_icon{
+            border-radius: 16px;
+            background: $color_primary;
+            transition: $transition_slow;
+            padding: 10px;
+        }
+        .social_content{
+            h4{
+                color: $color_dark;
+                font-family: $font-family;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .social_link{
+                color: $color_dark;
+                font-family: $font-family;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                a{
+                    color: $color_dark;
+                    font-family: $font-family;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    transition: $transition_slow;
+                }
+            }
+        }
+        &:hover{
+            .social_icon{
+                background: $color_secondary;
+            }
+            a{
+                color: $color_primary !important;
+            }
+        }
+    }
+}
+/* 2.4 - Template Contact - End
+==================================================2.4*/

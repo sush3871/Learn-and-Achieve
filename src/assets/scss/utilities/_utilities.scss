@@ -1,0 +1,140 @@
+@use 'sass:math';
+
+$utilities : (
+    "opacity" : (
+        "prefix" : "o",
+        "values" : (
+            "10" : 0.1,
+            "20" : 0.2,
+            "30" : 0.3,
+            "40" : 0.4,
+            "50" : 0.5,
+            "60" : 0.6,
+            "70" : 0.7,
+            "80" : 0.8,
+            "90" : 0.9,
+            "100" : 1,
+        )
+    ),
+    "border-radius" : (
+        "prefix" : "br",
+        "values" : (
+            "default" : $radius_primary,
+            "xs" : math.div($radius_primary, 10),
+            "sm" : math.div($radius_primary, 8),
+            "md" : math.div($radius_primary, 5),
+            "lg" : math.div($radius_primary, 4),
+            "xl" : math.div($radius_primary, 3),
+            "xxl" : math.div($radius_primary, 2),
+        )
+    ),
+    "padding" : (
+        "prefix" : "p",
+        "values" : (
+            "10" : $base_padding,
+            "20" : $base_padding * 2,
+            "30" : $base_padding * 3,
+            "40" : $base_padding * 4,
+            "50" : $base_padding * 5,
+            "60" : $base_padding * 6,
+            "70" : $base_padding * 7,
+            "80" : $base_padding * 8,
+            "90" : $base_padding * 9,
+            "100" : $base_padding * 10,
+        )
+    ),
+    "padding-top" : (
+        "prefix" : "pt",
+        "values" : (
+            "10" : $base_padding,
+            "20" : $base_padding * 2,
+            "30" : $base_padding * 3,
+            "40" : $base_padding * 4,
+            "50" : $base_padding * 5,
+            "60" : $base_padding * 6,
+            "70" : $base_padding * 7,
+            "80" : $base_padding * 8,
+            "90" : $base_padding * 9,
+            "100" : $base_padding * 10,
+        )
+    ),
+    "padding-bottom" : (
+        "prefix" : "pb",
+        "values" : (
+            "10" : $base_padding,
+            "20" : $base_padding * 2,
+            "30" : $base_padding * 3,
+            "40" : $base_padding * 4,
+            "50" : $base_padding * 5,
+            "60" : $base_padding * 6,
+            "70" : $base_padding * 7,
+            "80" : $base_padding * 8,
+            "90" : $base_padding * 9,
+            "100" : $base_padding * 10,
+        )
+    ),
+    "margin" : (
+        "prefix" : "m",
+        "values" : (
+            "10" : $base_margin,
+            "20" : $base_margin * 2,
+            "30" : $base_margin * 3,
+            "40" : $base_margin * 4,
+            "50" : $base_margin * 5,
+            "60" : $base_margin * 6,
+            "70" : $base_margin * 7,
+            "80" : $base_margin * 8,
+            "90" : $base_margin * 9,
+            "100" : $base_margin * 10,
+        )
+    ),
+    "margin-top" : (
+        "prefix" : "mt",
+        "values" : (
+            "10" : $base_margin,
+            "20" : $base_margin * 2,
+            "30" : $base_margin * 3,
+            "40" : $base_margin * 4,
+            "50" : $base_margin * 5,
+            "60" : $base_margin * 6,
+            "70" : $base_margin * 7,
+            "80" : $base_margin * 8,
+            "90" : $base_margin * 9,
+            "100" : $base_margin * 10,
+        )
+    ),
+    "margin-bottom" : (
+        "prefix" : "mb",
+        "values" : (
+            "10" : $base_margin,
+            "20" : $base_margin * 2,
+            "30" : $base_margin * 3,
+            "40" : $base_margin * 4,
+            "50" : $base_margin * 5,
+            "60" : $base_margin * 6,
+            "70" : $base_margin * 7,
+            "80" : $base_margin * 8,
+            "90" : $base_margin * 9,
+            "100" : $base_margin * 10,
+        )
+    )
+);
+
+// Genarate Utility Classes 
+
+@each $property , $map in $utilities {
+    $prefix : map-get($map: $map, $key: "prefix");
+    $values : map-get($map: $map, $key: "values");
+
+    @each $k , $v in $values{
+        @if($k == "default"){
+            .#{$prefix}{
+                #{$property} : $v
+            }
+        }@else {
+            .#{$prefix}-#{$k}{
+                #{$property} : $v
+            }
+        }
+    }
+}
