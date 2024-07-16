@@ -20,6 +20,9 @@
         }
         
         .service_img{
+            transition: $transition-fast;
+            overflow: hidden;
+            padding:20px;
             @include min-lg{
                 position: absolute;
                 z-index: -1;
@@ -54,6 +57,18 @@
                 width: 65%;
                 position: absolute;
                 right: 0;
+            }
+        }
+        .service_img{
+            transition: $transition-fast;
+            overflow: hidden;
+            padding:20px;
+        }
+    }
+    .service_item:hover, .service_item2:hover{
+        .service_img{
+            img{
+                scale: 1.05;
             }
         }
     }

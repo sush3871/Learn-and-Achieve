@@ -1,9 +1,22 @@
 /* 2.3 - Template Global Bharat Sat - Starts
 ================================================== */
 .bharatsat_section{
-    img{
-        border-radius: 20px;
+    .sat_img{
+        overflow: hidden;
+
+
+        img{
+            border-radius: 20px;
+            scale: 1;
+        }
+
+        &:hover{
+            img{
+                scale: 0.99;
+            }
+        }
     }
+    
     .main_img{
         @include max-md{
             margin: 20px 0;
@@ -27,6 +40,7 @@
         padding: 30px 30px 60px 30px;
         height: 100%;
         border-radius: 30px;
+        transition: $transition-slow;
         .key_title{
             color: $color-primary;
             font-family: $font-family;
@@ -35,14 +49,16 @@
             font-weight: 600;
             line-height: normal;
             text-transform: capitalize;
+            transition: $transition-fast;
+
             span{
-                color: $color-primary;
-                font-family: $font-family;
                 font-size: 64px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-                text-transform: capitalize;
+            }
+        }
+
+        &:hover{
+            .key_title{
+                color: $color-secondary;
             }
         }
     }

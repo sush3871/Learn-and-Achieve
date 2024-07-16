@@ -77,25 +77,25 @@ function Bharat_sat() {
                     <div className="row pb-5 pt-3">
                         <div className="col-lg-4">
                             <div className="d-flex gap-3 d-lg-block">
-                                <div className="first_img">
+                                <div className="first_img sat_img">
                                     <img src={b1} alt="Bharat_sat_img" className='img-fluid' />
                                 </div>
-                                <div className="second_img">
+                                <div className="second_img sat_img">
                                     <img src={b2} alt="Bharat_sat_img" className='img-fluid' />
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4">
-                            <div className="main_img">
+                            <div className="main_img sat_img">
                                 <img src={b3} alt="Bharat_sat_img" className='img-fluid' />
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="d-flex gap-3 d-lg-block">
-                                <div className="forth_img">
+                                <div className="forth_img sat_img">
                                     <img src={b4} alt="Bharat_sat_img" className='img-fluid' />
                                 </div>
-                                <div className="fifth_img">
+                                <div className="fifth_img sat_img">
                                     <img src={b5} alt="Bharat_sat_img" className='img-fluid' />
                                 </div>
                             </div>
